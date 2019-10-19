@@ -1,4 +1,4 @@
 {
     "html-css-class-completion.enableEmmetSupport": true,
-    "python.pythonPath": "env/bin/python3"
+    "python.pythonPath": "env/bin/python"
 }

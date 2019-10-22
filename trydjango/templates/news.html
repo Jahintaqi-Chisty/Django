@@ -1,3 +1,5 @@
+{% load static %}
+{% static "images" as baseUrl %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -9,10 +11,10 @@
 
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|" rel="stylesheet" type="text/css">
-		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="{% static 'fonts/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
 
 		<!-- Loading main css file -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="{% static 'style.css' %}">
 		
 		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
@@ -27,8 +29,8 @@
 		<div id="site-content">
 			<div class="site-header">
 				<div class="container">
-					<a href="index.html" id="branding">
-						<img src="images/logo.png" alt="" class="logo">
+					<a href="{% static 'index.html' %}" id="branding">
+						<img src="{% static 'images/logo.png' %}" alt="" class="logo">
 						<div class="logo-text">
 							<h1 class="site-title">Company Name</h1>
 							<small class="site-description">Tagline goes here</small>
@@ -39,7 +41,7 @@
 					<div class="main-navigation">
 						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
 						<ul class="menu">
-							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="{% url 'index' %}">Home</a></li>
 							<li class="menu-item current-menu-item"><a href="news.html">News</a></li>
 							<li class="menu-item"><a href="about.html">About</a></li>
 							<li class="menu-item"><a href="project.html">our Projects</a></li>
@@ -58,25 +60,25 @@
 						<h2 class="section-title">September</h2>
 						<ul class="news-list">
 							<li>
-								<figure><img src="dummy/thumb-1.jpg" alt=""></figure>
+								<figure><img src="{% static 'dummy/thumb-1.jpg' %}" alt=""></figure>
 								<h3 class="entry-title"><a href="#">Etiam tincidunt odio</a></h3>
 								<div class="date">30.09.2014</div>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dicta ab velit aliquid quisquam ex dolorem consectetur ad soluta iste. Cumque vero voluptate impedit, nostrum a sequi id vitae sed!</p>
 							</li>
 							<li>
-								<figure><img src="dummy/thumb-2.jpg" alt=""></figure>
+								<figure><img src="{% static 'dummy/thumb-2.jpg'%}" alt=""></figure>
 								<h3 class="entry-title"><a href="#">Etiam tincidunt odio</a></h3>
 								<div class="date">30.09.2014</div>
 								<p>Ea modi deserunt, asperiores quaerat! Rerum illum ab cupiditate, eius beatae rem praesentium. Eius eos libero, quisquam consequatur numquam similique hic, ipsam voluptatem a dolorum nobis et sint ut est.</p>
 							</li>
 							<li>
-								<figure><img src="dummy/thumb-3.jpg" alt=""></figure>
+								<figure><img src="{% static 'dummy/thumb-3.jpg' %}" alt=""></figure>
 								<h3 class="entry-title"><a href="#">Etiam tincidunt odio</a></h3>
 								<div class="date">30.09.2014</div>
 								<p>Explicabo tempora dignissimos, dicta maxime modi illum sit, facilis aliquid, a sint quasi quisquam. Beatae quia aut libero molestias, omnis minus autem, quas asperiores corporis. Distinctio eveniet molestiae, libero dignissimos.</p>
 							</li>
 							<li>
-								<figure><img src="dummy/thumb-4.jpg" alt=""></figure>
+								<figure><img src="{% static 'dummy/thumb-4.jpg' %}" alt=""></figure>
 								<h3 class="entry-title"><a href="#">Etiam tincidunt odio</a></h3>
 								<div class="date">30.09.2014</div>
 								<p>Autem aspernatur saepe, placeat, debitis laborum obcaecati sed ut repellat dolore possimus unde. Odit non unde, quas consequuntur dignissimos odio fugit corporis repudiandae rerum, tempora pariatur quasi, quia earum, quidem?</p>
@@ -88,25 +90,25 @@
 						<h2 class="section-title">August</h2>
 						<ul class="news-list">
 							<li>
-								<figure><img src="dummy/thumb-5.jpg" alt=""></figure>
+								<figure><img src="{% static 'dummy/thumb-5.jpg' %}" alt=""></figure>
 								<h3 class="entry-title"><a href="#">Etiam tincidunt odio</a></h3>
 								<div class="date">30.09.2014</div>
 								<p>Ut fugit, consectetur beatae voluptatum officia doloremque, dolor quia totam quidem magnam dignissimos sapiente vero fuga sit et ipsum earum. Voluptatum porro beatae aut ut unde. Exercitationem autem id quia?</p>
 							</li>
 							<li>
-								<figure><img src="dummy/thumb-6.jpg" alt=""></figure>
+								<figure><img src="{% static 'dummy/thumb-6.jpg' %}" alt=""></figure>
 								<h3 class="entry-title"><a href="#">Etiam tincidunt odio</a></h3>
 								<div class="date">30.09.2014</div>
 								<p>Rerum provident recusandae reprehenderit nesciunt mollitia, officiis odit quaerat vero, cupiditate laudantium pariatur molestiae laboriosam assumenda a harum similique quis neque reiciendis necessitatibus praesentium. Possimus voluptates maxime quis rem dolore!</p>
 							</li>
 							<li>
-								<figure><img src="dummy/thumb-7.jpg" alt=""></figure>
+								<figure><img src="{% static 'dummy/thumb-7.jpg' %}" alt=""></figure>
 								<h3 class="entry-title"><a href="#">Etiam tincidunt odio</a></h3>
 								<div class="date">30.09.2014</div>
 								<p>Aut magni culpa, ipsam voluptatum. Laborum commodi, eum suscipit quae a aut repudiandae eaque quas iure. Alias sunt adipisci deserunt sed libero, pariatur deleniti dolor distinctio nulla voluptate. Illum, quaerat.</p>
 							</li>
 							<li>
-								<figure><img src="dummy/thumb-8.jpg" alt=""></figure>
+								<figure><img src="{% static 'dummy/thumb-8.jpg' %}" alt=""></figure>
 								<h3 class="entry-title"><a href="#">Etiam tincidunt odio</a></h3>
 								<div class="date">30.09.2014</div>
 								<p>In voluptatibus, sit error autem reprehenderit illo placeat dignissimos, itaque sint enim, adipisci natus, consequatur suscipit. Voluptate voluptates, nihil animi, inventore corporis consequuntur sequi expedita? Perspiciatis, soluta voluptatem sit quasi.</p>
@@ -143,15 +145,15 @@
 
 					</div> <!-- .pull-right -->
 
-					<div class="colophon">Copyright 2014 Company name. Designed by <a href="http://www.vandelaydesign.com/" title="Designed by VandelayDesign.com" target="_blank">VandelayDesign.com</a>. All rights reserved.</div>
+					<div class="colophon">Copyright 2014 Company name. Designed by <a href="http://www.vandelaydesign.com/" title="Designed by VandelayDesign.com" target="_blank">Jahin</a>. All rights reserved.</div>
 
 				</div> <!-- .container -->
 			</footer> <!-- .site-footer -->
 		</div>
 
-		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/app.js"></script>
+		<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+		<script src="{% static 'js/plugins.js' %}"></script>
+		<script src="{% static 'js/app.js' %}"></script>
 		
 	</body>
 

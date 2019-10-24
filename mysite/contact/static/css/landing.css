@@ -1,0 +1,139 @@
+html {
+    margin: 0!important;
+  }
+  
+  body {
+    color:#000!important;
+    font-family: 'Raleway', sans-serif!important;
+  }
+  
+  .box {
+  
+  
+  
+  
+  background: #FFF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FFF , #FFF); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FFF , #FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          
+  padding:25px!important;
+          
+    
+  }
+  
+  
+  .black {
+    color:#000!important;
+  }
+  
+  
+  .navbar-nav {
+    display:inline;
+    float:right!important;
+    padding-top:18px!important;
+  }
+  
+  .navbar-default {
+     padding-bottom:20px!important;
+  }
+  
+  .navbar-nav>li>a {
+    color:#FF561F!important;
+    font-size:20px!important;
+  }
+  
+  .navbar-nav>li{
+    padding-right:20px!important;
+  }
+  
+  .navbar-default .navbar-nav>li>a:hover {
+      color: !important;
+      background:#fff!important;
+     
+  }
+  
+  .navbar-default .navbar-nav>li>active>a:hover {
+    background:#fff!important;
+  }
+  
+  
+  .navbar-brand {
+    float:left;
+    padding: 15px 25px!important;
+  }
+  
+  .navbar-default {
+    background:#000!important;
+    border-radius:0!important;
+    border:none!important;
+    margin:0!important;
+  }
+  
+  .lead {
+    margin-top: 2em!important;
+  }
+  
+  
+  .btn-success {
+    background: #FF561F!important;
+      vertical-align: baseline!important;
+      
+      margin-right: 10px!important;
+      padding: 13px 33px!important;
+      -moz-border-radius: 30px!important;
+      -webkit-border-radius: 30px!important;
+      border-radius: 30px!important;
+      color: #FFF!important;
+      font-size: 12px!important;
+      font-weight: 700!important;
+      letter-spacing: 0.8px!important;
+      text-transform: uppercase!important;
+      text-shadow: none!important;
+      border:none!important;
+    display:inline!important;
+    margin-top:2.5em!important;}
+  
+  
+  .mobile-image {
+    float:right;
+    width:80%;
+  }
+  
+  h1 {
+    font-size:50px!important;
+  }
+  
+  .download-buttons {
+    display:inline!important;
+    margin-top:4em;
+  }
+  
+  
+  .box3 {
+    background-image:url('http://csmthemes.com/themes/launch/image/img/bg-twitter.jpg');
+    padding:320px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  
+  
+  .centered {
+    text-align:center;
+    color:#fff!important;
+  }
+  
+  
+  .space-up {
+    margin-top:2.5em;
+  }
+  
+  form {
+    margin-top: 2em!important;
+  }
+  
+  
+  .fifty-percent{
+        padding: 0 200px;
+  }

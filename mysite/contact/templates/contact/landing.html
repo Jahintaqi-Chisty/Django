@@ -1,0 +1,73 @@
+{% load staticfiles %}
+<html>
+
+<head>
+  <title>AJ</title>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="http://csmthemes.com/themes/launch/image/img/logo-head.svg"></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="{% url 'contact:contact_list' %}">Contact App</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid box">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 space-up">
+          <h1>We're on a <span class="black">mission </span><i class="fa fa-rocket fa-4 animated slideInUp infinite" aria-hidden="true"></i></h1>
+          <p class="lead">Downloaded more than 10,000 times, this 150-page intro to Git is a must-read for serious developers!</p>
+
+          <p>Launch is free and very simple to set up. Just install the app and go about your day, we'll let you know how you're doing. Launch was rated App Store Best of 2014 and has been downloaded more than 1 million times.</p>
+
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <button class="btn btn-success" type="button">Subscribe</button>
+
+
+            </div>
+          </form>
+
+
+        </div>
+
+        <div class="col-md-6">
+          <img class="mobile-image img-responsive " src="http://human.co/static/images/iphone_samsung_02.png">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="box3">
+    
+    <h1 class="centered">Every minute counts.</h1>
+    <p class="centered fifty-percent">30 minutes of daily activity are the best form of preventive medicine. Every minute you spend walking, running or biking throughout the day counts towards your goal on Human. It's never been this easy to stay motivated along the way, every day.
+    </p>
+ 
+    </div>
+</body>
+
+</html>

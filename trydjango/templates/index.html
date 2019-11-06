@@ -31,7 +31,7 @@
 		<div id="site-content">
 			<div class="site-header">
 				<div class="container">
-					<a href="{% static 'index.html' %}" id="branding">
+					<a href="/" id="branding">
 						<img src="{% static 'images/logo.png' %}" alt="" class="logo">
 						<div class="logo-text">
 							<h1 class="site-title">Volumatrix</h1>
@@ -43,18 +43,20 @@
 					<div class="main-navigation">
 						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
 						<ul class="menu">
-							<li class="menu-item current-menu-item"><a href="{% static 'index.html' %}">Home</a></li>
+                            {% block currentmenu %}
+							<li class="menu-item current-menu-item"><a href="/">Home</a></li>
 							<li class="menu-item"><a href="{% url 'news' %}">News</a></li>
 							<li class="menu-item"><a href="{% static 'about.html' %}">About</a></li>
 							<li class="menu-item"><a href="{% static 'project.html' %}">our Projects</a></li>
-							<li class="menu-item"><a href="{% static 'contact.html' %}">Contact</a></li>
+							<li class="menu-item"><a href="{% url 'contact' %}">Contact</a></li>
+                            {% endblock %}
 						</ul> <!-- .menu -->
 					</div> <!-- .main-navigation -->
 
 					<div class="mobile-navigation"></div>
 				</div>
 			</div> <!-- .site-header -->
-
+{% block body %}
 			<div class="hero hero-slider">
 				<ul class="slides">
 					<li data-bg-image="{% static 'dummy/slide-1.jpg' %}">
@@ -87,6 +89,7 @@
 			<main class="main-content">
 				<div class="fullwidth-block latest-projects-section">
 					<div class="container">
+
 						<h2 class="section-title">Our latest projects</h2>
 						<div class="row">
 							<div class="col-sm-6 col-md-3">
@@ -135,25 +138,25 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-4">
-								
+
 								<h3 class="section-title">About Us</h3>
 								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo ipsam voluptatem quia voluptas aspernatur.</p>
 								<a href="#" class="button">Read more</a>
-								
+
 							</div>
 							<div class="col-md-4">
-								
+
 								<h3 class="section-title">High QUality</h3>
 								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo ipsam voluptatem quia voluptas aspernatur.</p>
 								<a href="#" class="button">Read more</a>
-								
+
 							</div>
 							<div class="col-md-4">
-								
+
 								<h3 class="section-title">Safety Control</h3>
 								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo ipsam voluptatem quia voluptas aspernatur.</p>
 								<a href="#" class="button">Read more</a>
-								
+
 							</div>
 						</div>
 
@@ -199,11 +202,11 @@
 								</ul>
 							</div>
 						</div> <!-- .row -->
-						
+
 					</div> <!-- .container -->
 				</div> <!-- .fullwidth-block -->
 			</main> <!-- .main-content -->
-
+            {% endblock %}
 			<footer class="site-footer">
 				<div class="container">
 					<div class="pull-left">
